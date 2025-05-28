@@ -1,0 +1,17 @@
+20:14:29 **** Incremental Build of configuration Debug for project I2C_Driver_RTC_LCD ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/017rtc_lcd_systick_1s.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/STM32F407G_Development/Development/MCU1/I2C_Driver_RTC_LCD/BSP2" -I"C:/STM32F407G_Development/Development/MCU1/I2C_Driver_RTC_LCD/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/017rtc_lcd_systick_1s.d" -MT"Src/017rtc_lcd_systick_1s.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/017rtc_lcd_systick_1s.o"
+arm-none-eabi-gcc -o "I2C_Driver_RTC_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32F407G_Development\Development\MCU1\I2C_Driver_RTC_LCD\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Driver_RTC_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Driver_RTC_LCD.elf
+ 
+arm-none-eabi-size  I2C_Driver_RTC_LCD.elf 
+arm-none-eabi-objdump -h -S I2C_Driver_RTC_LCD.elf  > "I2C_Driver_RTC_LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  10764	    124	   1964	  12852	   3234	I2C_Driver_RTC_LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Driver_RTC_LCD.list
+ 
+
+20:14:29 Build Finished. 0 errors, 0 warnings. (took 832ms)
+

@@ -1,0 +1,10 @@
+17:37:58 **** Incremental Build of configuration Debug for project Step1_GPIO_Dev ****
+make -j8 all 
+arm-none-eabi-size  Step1_GPIO_Dev.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2156	      0	   1568	   3724	    e8c	Step1_GPIO_Dev.elf
+Finished building: default.size.stdout
+ 
+
+17:37:59 Build Finished. 0 errors, 0 warnings. (took 363ms)
+

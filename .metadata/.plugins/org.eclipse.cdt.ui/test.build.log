@@ -1,0 +1,22 @@
+16:27:35 **** Incremental Build of configuration Debug for project test ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I"C:/STM32F407G_Development/Development/MCU1/test/Inc" -I"C:/STM32F407G_Development/Development/MCU1/test/Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I"C:/STM32F407G_Development/Development/MCU1/test/Inc" -I"C:/STM32F407G_Development/Development/MCU1/test/Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I"C:/STM32F407G_Development/Development/MCU1/test/Inc" -I"C:/STM32F407G_Development/Development/MCU1/test/Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Driver/Src/stm32f407xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Driver/Src/stm32f407xx_spi_driver.d" -MT"Driver/Src/stm32f407xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Driver/Src/stm32f407xx_spi_driver.o"
+../Driver/Src/stm32f407xx_spi_driver.c:8:10: fatal error: stm32f407xx_spi_driver.h: No such file or directory
+    8 | #include "stm32f407xx_spi_driver.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Src/006spi_tx_testing.c:9:
+C:/STM32F407G_Development/Development/MCU1/test/Driver/Inc/stm32f407xx.h:616:10: fatal error: stm32f407xx_gpio_driver.h: No such file or directory
+  616 | #include "stm32f407xx_gpio_driver.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Driver/Src/subdir.mk:19: Driver/Src/stm32f407xx_spi_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:25: Src/006spi_tx_testing.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:27:35 Build Failed. 5 errors, 0 warnings. (took 432ms)
+

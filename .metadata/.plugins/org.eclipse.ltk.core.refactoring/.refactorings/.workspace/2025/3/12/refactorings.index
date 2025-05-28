@@ -1,0 +1,6 @@
+1742210778515	Delete resource 'I2C_Driver_RTC_LCD/Bsp'
+1742286200061	Delete resource 'I2C_Driver_RTC_LCD/Bsp'
+1742307692738	Delete resource 'I2C_Driver_RTC_LCD/Src/010I2C_Master_tx_testing.c'
+1742308339550	Delete resource 'I2C_Driver_RTC_LCD/Src/017rtc_lcd2.c'
+1742380428944	Delete resource 'I2C_Driver/Src/010I2C_Master_rx_testing2.c'
+1742469508413	Delete resource 'I2C_Driver/Src/010I2C_Slave_tx_testingc'

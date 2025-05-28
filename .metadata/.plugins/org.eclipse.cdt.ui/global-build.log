@@ -1,0 +1,7 @@
+18:09:53 **** Clean-only build of configuration Debug for project I2C_Driver ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/014i2c_slave_tx_string2.cyclo ./Src/014i2c_slave_tx_string2.d ./Src/014i2c_slave_tx_string2.o ./Src/014i2c_slave_tx_string2.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf ./Drivers/Src/stm32f407xx_gpio_driver.cyclo ./Drivers/Src/stm32f407xx_gpio_driver.d ./Drivers/Src/stm32f407xx_gpio_driver.o ./Drivers/Src/stm32f407xx_gpio_driver.su ./Drivers/Src/stm32f407xx_i2c_driver.cyclo ./Drivers/Src/stm32f407xx_i2c_driver.d ./Drivers/Src/stm32f407xx_i2c_driver.o ./Drivers/Src/stm32f407xx_i2c_driver.su
+rm -rf I2C_Driver.elf I2C_Driver.list I2C_Driver.map default.size.stdout
+ 

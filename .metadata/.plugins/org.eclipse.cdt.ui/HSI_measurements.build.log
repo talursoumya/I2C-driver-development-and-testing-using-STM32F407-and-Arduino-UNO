@@ -1,0 +1,17 @@
+13:59:41 **** Incremental Build of configuration Debug for project HSI_measurements ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main_old.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main_old.d" -MT"Src/main_old.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main_old.o"
+arm-none-eabi-gcc -o "HSI_measurements.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32F407G_Development\Development\MCU1\HSI_measurements\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HSI_measurements.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HSI_measurements.elf
+ 
+arm-none-eabi-size  HSI_measurements.elf 
+arm-none-eabi-objdump -h -S HSI_measurements.elf  > "HSI_measurements.list"
+   text	   data	    bss	    dec	    hex	filename
+    784	      0	   1568	   2352	    930	HSI_measurements.elf
+Finished building: default.size.stdout
+ 
+Finished building: HSI_measurements.list
+ 
+
+13:59:42 Build Finished. 0 errors, 0 warnings. (took 961ms)
+
