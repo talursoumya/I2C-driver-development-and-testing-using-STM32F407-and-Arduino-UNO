@@ -1,0 +1,5 @@
+../Src/015uart_tx.c:18:6:USART2_Init	8	static
+../Src/015uart_tx.c:30:6:USART2_GPIOInit	24	static
+../Src/015uart_tx.c:52:6:GPIO_ButtonInit	32	static
+../Src/015uart_tx.c:80:6:delay	16	static
+../Src/015uart_tx.c:86:5:main	8	static
