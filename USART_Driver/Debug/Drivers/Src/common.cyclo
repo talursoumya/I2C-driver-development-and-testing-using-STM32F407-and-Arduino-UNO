@@ -1,3 +1,0 @@
-../Drivers/Src/common.c:14:10:RCC_GetPCLK1Value	6
-../Drivers/Src/common.c:80:10:RCC_GetPCLK2Value	4
-../Drivers/Src/common.c:118:11:RCC_GetPLLOutputClock	1
